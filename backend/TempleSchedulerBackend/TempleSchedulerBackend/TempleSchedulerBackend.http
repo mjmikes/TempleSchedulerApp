@@ -1,0 +1,6 @@
+@TempleSchedulerBackend_HostAddress = http://localhost:5235
+
+GET {{TempleSchedulerBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
