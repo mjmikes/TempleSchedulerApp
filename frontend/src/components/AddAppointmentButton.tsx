@@ -3,7 +3,8 @@ import React from "react";
 export const AddAppointmentButton: React.FC = () => {
   return (
     <button
-      className="overflow-hidden z-10 self-end mt-2.5 mr-5 max-w-full text-sm font-medium tracking-normal leading-none text-center text-fuchsia-50 rounded-2xl shadow-md bg-zinc-800 min-h-14 min-w-20 w-[183px]"
+      style={{ position: "fixed", bottom: "20px", right: "20px" }}
+      className="overflow-hidden z-50 self-end mt-2.5 max-w-full text-sm font-medium tracking-normal leading-none text-center text-fuchsia-50 rounded-2xl shadow-md bg-zinc-800 min-h-14 min-w-20 w-[183px]"
       aria-label="Add new appointment"
     >
       <div className="flex flex-1 gap-3 justify-center items-center py-4 pr-5 pl-4 size-full">
