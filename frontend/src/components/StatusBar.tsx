@@ -1,27 +1,53 @@
-"use client";
-
-import React from "react";
+import * as React from "react";
 
 export const StatusBar: React.FC = () => {
   return (
-    <header className="pt-5 w-full bg-white h-[39px]">
-      <div className="flex justify-between items-center w-full">
-        <time className="flex-1 shrink gap-2.5 self-stretch pr-1.5 pl-4 my-auto text-lg leading-none text-center text-black whitespace-nowrap basis-0 font-[590]">
-          9:41
-        </time>
-        <div className="flex shrink-0 self-stretch my-auto h-2.5 w-[124px]" />
-        <div className="flex flex-1 shrink gap-2 justify-center items-center self-stretch pr-4 pl-1.5 my-auto basis-0">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/2daff01164d1f56f28b0d1cd21000ea5c0857de85b1f08ac1c20b2912a0e0d43?placeholderIfAbsent=true&apiKey=30c280d5425d4f8283bc5b68e1911542"
-            alt="Signal strength"
-            className="object-contain shrink-0 self-stretch my-auto aspect-[1.58] w-[19px]"
+    <header className="flex justify-between items-center px-4 pt-5 pb-0 bg-white h-[51px]">
+      <time className="text-lg text-black">9:41</time>
+      <div>
+        <svg
+          width="135"
+          height="14"
+          viewBox="0 0 135 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="status-icons"
+        >
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M43.1152 2.03302C43.1152 1.39997 42.6376 0.886791 42.0485 0.886791H40.9818C40.3927 0.886791 39.9152 1.39997 39.9152 2.03302V11.967C39.9152 12.6 40.3927 13.1132 40.9818 13.1132H42.0485C42.6376 13.1132 43.1152 12.6 43.1152 11.967V2.03302ZM35.681 3.33207H36.7477C37.3368 3.33207 37.8144 3.85757 37.8144 4.50581V11.9395C37.8144 12.5877 37.3368 13.1132 36.7477 13.1132H35.681C35.0919 13.1132 34.6144 12.5877 34.6144 11.9395V4.50581C34.6144 3.85757 35.0919 3.33207 35.681 3.33207ZM31.3493 5.98112H30.2826C29.6935 5.98112 29.2159 6.51331 29.2159 7.1698V11.9245C29.2159 12.581 29.6935 13.1132 30.2826 13.1132H31.3493C31.9384 13.1132 32.4159 12.581 32.4159 11.9245V7.1698C32.4159 6.51331 31.9384 5.98112 31.3493 5.98112ZM26.0485 8.42641H24.9818C24.3927 8.42641 23.9152 8.951 23.9152 9.59811V11.9415C23.9152 12.5886 24.3927 13.1132 24.9818 13.1132H26.0485C26.6376 13.1132 27.1152 12.5886 27.1152 11.9415V9.59811C27.1152 8.951 26.6376 8.42641 26.0485 8.42641Z"
+            fill="black"
           />
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/dcdd998f43ab4d9083b9bd1ee1889ecac086abef97cd5ce992a95b24ded9eae4?placeholderIfAbsent=true&apiKey=30c280d5425d4f8283bc5b68e1911542"
-            alt="Battery level"
-            className="object-contain shrink-0 self-stretch my-auto aspect-[1.42] w-[17px]"
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M58.6864 3.30213C61.1736 3.30223 63.5656 4.22432 65.3681 5.8778C65.5038 6.00545 65.7208 6.00384 65.8544 5.87419L67.1519 4.61072C67.2196 4.54496 67.2574 4.45588 67.2568 4.3632C67.2562 4.27052 67.2174 4.18187 67.1489 4.11688C62.4179 -0.257833 54.9542 -0.257833 50.2232 4.11688C50.1547 4.18183 50.1158 4.27044 50.1152 4.36313C50.1145 4.45581 50.1522 4.54491 50.2198 4.61072L51.5177 5.87419C51.6513 6.00404 51.8684 6.00565 52.0041 5.8778C53.8068 4.22421 56.1991 3.30212 58.6864 3.30213Z"
+            fill="black"
           />
-        </div>
+          <rect
+            opacity="0.35"
+            x="74.7568"
+            y="1"
+            width="24"
+            height="12"
+            rx="3.8"
+            stroke="black"
+          />
+          <path
+            opacity="0.4"
+            d="M100.257 5.28113V9.3566C101.062 9.01143 101.585 8.20847 101.585 7.31886C101.585 6.42926 101.062 5.6263 100.257 5.28113Z"
+            fill="black"
+          />
+          <rect
+            x="76.2568"
+            y="2.5"
+            width="21"
+            height="9"
+            rx="2.5"
+            fill="black"
+          />
+        </svg>
       </div>
     </header>
   );
