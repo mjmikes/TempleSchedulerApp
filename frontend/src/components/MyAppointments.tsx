@@ -1,8 +1,6 @@
 "use client";
 
 import React from "react";
-import { StatusBar } from "./StatusBar";
-import { BackButton } from "./BackButton";
 import { AppointmentCard } from "./AppointmentCard";
 import { AddAppointmentButton } from "./AddAppointmentButton";
 
@@ -60,32 +58,23 @@ const MyAppointments: React.FC = () => {
 
   return (
     <main className="flex flex-col mx-auto w-full bg-white max-w-[480px]">
-      <StatusBar />
-      <BackButton />
-
-      <section className="p-6 mt-0 w-full bg-white min-h-[722px]">
-        <h1 className="flex-1 shrink gap-2 w-full text-2xl font-semibold tracking-tight leading-tight basis-0 min-h-[29px] text-stone-900">
-          My Temple Appointments
-        </h1>
-
-        <div className="mt-8 w-full">
-          {appointments.slice(0, 3).map((appointment, index) => (
-            <div key={index} className={index > 0 ? "mt-12" : ""}>
-              <AppointmentCard {...appointment} />
-            </div>
-          ))}
+      <div className="fixed top-0 left-0 right-0 z-20 bg-white">
+        <div className="flex justify-between items-center p-6 w-full">
+          <h1 className="text-2xl font-semibold tracking-tight leading-tight text-stone-900 flex-grow text-center">
+            My Temple Appointments
+          </h1>
+          <div style={{ width: 48 }}> {/* Invisible spacer for symmetry */} </div>
         </div>
-      </section>
+      </div>
 
-      <AddAppointmentButton />
-
-      <section className="self-center mt-0 w-full max-w-[345px]">
-        {appointments.slice(3).map((appointment, index) => (
+      <section className="pt-24 p-6 w-full bg-white min-h-screen">
+        {appointments.map((appointment, index) => (
           <div key={index} className={index > 0 ? "mt-12" : ""}>
             <AppointmentCard {...appointment} />
           </div>
         ))}
       </section>
+      <AddAppointmentButton />
     </main>
   );
 };
