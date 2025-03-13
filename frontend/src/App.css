@@ -5,18 +5,6 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
 @keyframes logo-spin {
   from {
@@ -39,4 +27,22 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px; /* Adds space between links */
+}
+.menu-button-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100; /* Ensures it stays above other elements */
 }
