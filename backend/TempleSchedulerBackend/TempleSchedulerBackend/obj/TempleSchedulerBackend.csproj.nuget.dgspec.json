@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ethan\\Source\\Repos\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\TempleSchedulerBackend.csproj": {}
+    "C:\\Users\\AudraK\\source\\repos\\TempleSchedulerApp\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\TempleSchedulerBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ethan\\Source\\Repos\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\TempleSchedulerBackend.csproj": {
+    "C:\\Users\\AudraK\\source\\repos\\TempleSchedulerApp\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\TempleSchedulerBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ethan\\Source\\Repos\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\TempleSchedulerBackend.csproj",
+        "projectUniqueName": "C:\\Users\\AudraK\\source\\repos\\TempleSchedulerApp\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\TempleSchedulerBackend.csproj",
         "projectName": "TempleSchedulerBackend",
-        "projectPath": "C:\\Users\\ethan\\Source\\Repos\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\TempleSchedulerBackend.csproj",
-        "packagesPath": "C:\\Users\\ethan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ethan\\Source\\Repos\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\obj\\",
+        "projectPath": "C:\\Users\\AudraK\\source\\repos\\TempleSchedulerApp\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\TempleSchedulerBackend.csproj",
+        "packagesPath": "C:\\Users\\AudraK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\AudraK\\source\\repos\\TempleSchedulerApp\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ethan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AudraK\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

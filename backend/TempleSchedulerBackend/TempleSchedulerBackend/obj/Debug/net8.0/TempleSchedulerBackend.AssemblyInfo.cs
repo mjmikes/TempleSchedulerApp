@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TempleSchedulerBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e33b420eebc9632502aa184d5a636ea84c72339d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+543ccec9d175d036a0e63dd651759e94d300d8de")]
 [assembly: System.Reflection.AssemblyProductAttribute("TempleSchedulerBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TempleSchedulerBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

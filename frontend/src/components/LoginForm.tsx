@@ -7,9 +7,27 @@ const LoginForm: React.FC = () => {
   const [password, setPassword] = useState<string>("");
   const navigate = useNavigate(); // Initialize navigate function
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle login logic here
+
+    try {
+      const response = await fetch("http://localhost:5000/api/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Login failed");
+      }
+
+      const data = await response.json();
+      localStorage.setItem("token", data.Token); // Save the token
+      navigate("/dashboard"); // Redirect to a protected page
+    } catch (error) {
+      console.error("Login error:", error);
+      alert("Invalid credentials");
+    }
   };
 
   return (
