@@ -63,7 +63,10 @@ const MyAppointments: React.FC = () => {
           <h1 className="text-2xl font-semibold tracking-tight leading-tight text-stone-900 flex-grow text-center">
             My Temple Appointments
           </h1>
-          <div style={{ width: 48 }}> {/* Invisible spacer for symmetry */} </div>
+          <div style={{ width: 48 }}>
+            {" "}
+            {/* Invisible spacer for symmetry */}{" "}
+          </div>
         </div>
       </div>
 
