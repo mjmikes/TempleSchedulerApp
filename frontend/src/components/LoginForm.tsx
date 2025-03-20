@@ -1,9 +1,11 @@
-"use client";
-import * as React from "react";
+// src/LoginForm.tsx
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
-export const LoginForm: React.FC = () => {
-  const [username, setUsername] = React.useState("");
-  const [password, setPassword] = React.useState("");
+const LoginForm: React.FC = () => {
+  const [username, setUsername] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const navigate = useNavigate(); // Initialize navigate function
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -11,48 +13,28 @@ export const LoginForm: React.FC = () => {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="flex flex-col gap-8 items-center mt-8 w-full max-w-[296px] max-sm:max-w-[90%]"
-    >
-      <div className="flex items-center px-4 py-0 w-full rounded bg-neutral-100 h-[58px] max-sm:h-[50px]">
-        <input
-          type="text"
-          placeholder="Username"
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
-          className="text-lg text-black border-[none] bg-transparent w-full outline-none"
-          aria-label="Username"
-        />
-      </div>
-      <div className="flex items-center px-4 py-0 w-full rounded bg-neutral-100 h-[58px] max-sm:h-[50px]">
-        <input
-          type="password"
-          placeholder="Password"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          className="text-lg text-black border-[none] bg-transparent w-full outline-none"
-          aria-label="Password"
-        />
-      </div>
-      <button
-        type="submit"
-        className="px-6 py-2 mt-6 text-base text-black rounded cursor-pointer bg-neutral-100 border-[none] hover:bg-neutral-200 transition-colors"
-      >
-        Login
-      </button>
+    <form onSubmit={handleSubmit} className="login-form">
+      <input
+        type="text"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+        placeholder="Username"
+      />
+      <input
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+        placeholder="Password"
+      />
+      <button type="submit">Login</button>
       <button
         type="button"
-        className="px-4 py-2 text-base text-black rounded cursor-pointer bg-neutral-100 hover:bg-neutral-200 transition-colors w-full text-center"
+        onClick={() => navigate("/forgot-password")} // Navigate to Forgot Password page
       >
         Forgot Password?
-      </button>
-      <button
-        type="button"
-        className="px-4 py-2 text-base text-black rounded cursor-pointer bg-neutral-100 hover:bg-neutral-200 transition-colors w-full text-center"
-      >
-        New User?
       </button>
     </form>
   );
 };
+
+export default LoginForm;
