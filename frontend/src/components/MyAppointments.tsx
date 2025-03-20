@@ -7,14 +7,13 @@ import { AddAppointmentButton } from "./AddAppointmentButton";
 // HI here is the get request for appointments
 // https://localhost:5000/TempleSchedule/GetAppointments
 // https://localhost:5000/TempleSchedule/PostAppointment
-// Example Body = 
+// Example Body = to post a temple appointment.
 // [
 //   {
-//     "appointmentId": 0,
 //     "userId": 0,
 //     "slotId": 0,
 //     "guestCount": 0,
-//     "status": "string"
+//     "status": "string" // this needs to be one of the 3 required types.
 //   }
 // ]
 
