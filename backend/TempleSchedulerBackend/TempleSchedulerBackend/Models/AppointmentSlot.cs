@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace TempleSchedulerBackend.Models;
 
 public partial class AppointmentSlot
 {
+    [Key]
     public int SlotId { get; set; }
 
     public int TempleId { get; set; }
@@ -16,8 +18,6 @@ public partial class AppointmentSlot
     public int MaxCapacity { get; set; }
 
     public int? BookedCount { get; set; }
-
-    public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
 
     public virtual Ordinance Ordinance { get; set; } = null!;
 
