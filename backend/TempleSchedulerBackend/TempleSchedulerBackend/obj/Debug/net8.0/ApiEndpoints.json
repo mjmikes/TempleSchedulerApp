@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "TempleSchedulerBackend.Controllers.TempleScheduleController",
+    "Method": "Get",
+    "RelativePath": "TempleSchedule",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[TempleSchedulerBackend.Models.Appointment, TempleSchedulerBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "Appointments"
+  },
+  {
+    "ContainingType": "TempleSchedulerBackend.Controllers.TempleScheduleController",
+    "Method": "CreateAppointment",
+    "RelativePath": "TempleSchedule",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newAppointment",
+        "Type": "TempleSchedulerBackend.Models.Appointment",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "TempleSchedulerBackend.Models.Appointment",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "Appointment"
+  },
+  {
+    "ContainingType": "TempleSchedulerBackend.Controllers.TempleScheduleController",
+    "Method": "RegisterUser",
+    "RelativePath": "TempleSchedule/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "TempleSchedulerBackend.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

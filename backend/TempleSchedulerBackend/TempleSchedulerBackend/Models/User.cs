@@ -15,7 +15,7 @@ public partial class User
 
     public string? PhoneNumber { get; set; }
 
-    public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
+    //public virtual ICollection<Appointment> Appointments { get; set; } = new List<Appointment>();
 
     public virtual UserLogin? UserLogin { get; set; }
 }

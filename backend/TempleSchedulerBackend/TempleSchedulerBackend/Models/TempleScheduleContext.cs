@@ -30,7 +30,7 @@ public partial class TempleScheduleContext : DbContext
     public virtual DbSet<UserLogin> UserLogins { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlite("Data Source=templeschedule.sqlite");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -45,7 +45,7 @@ public partial class TempleScheduleContext : DbContext
 
             entity.HasOne(d => d.Slot).WithMany(p => p.Appointments).HasForeignKey(d => d.SlotId);
 
-            entity.HasOne(d => d.User).WithMany(p => p.Appointments).HasForeignKey(d => d.UserId);
+            //entity.HasOne(d => d.User).WithMany(p => p.Appointments).HasForeignKey(d => d.UserId);
         });
 
         modelBuilder.Entity<AppointmentSlot>(entity =>
@@ -96,6 +96,11 @@ public partial class TempleScheduleContext : DbContext
             entity.HasIndex(e => e.Email, "IX_Users_Email").IsUnique();
 
             entity.Property(e => e.UserId).HasColumnName("UserID");
+
+            entity.HasOne(u => u.UserLogin)
+            .WithOne(ul => ul.User)
+            .HasForeignKey<UserLogin>(ul => ul.UserId)
+            .OnDelete(DeleteBehavior.Cascade);
         });
 
         modelBuilder.Entity<UserLogin>(entity =>

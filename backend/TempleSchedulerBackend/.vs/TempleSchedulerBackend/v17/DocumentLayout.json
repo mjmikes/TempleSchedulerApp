@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\spenc\\OneDrive\\Documents\\GitHub\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7DAF9A41-298F-4904-B7FE-6325C118119E}|TempleSchedulerBackend\\TempleSchedulerBackend.csproj|c:\\users\\spenc\\onedrive\\documents\\github\\templeschedulerapp\\backend\\templeschedulerbackend\\templeschedulerbackend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DAF9A41-298F-4904-B7FE-6325C118119E}|TempleSchedulerBackend\\TempleSchedulerBackend.csproj|solutionrelative:templeschedulerbackend\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DAF9A41-298F-4904-B7FE-6325C118119E}|TempleSchedulerBackend\\TempleSchedulerBackend.csproj|c:\\users\\spenc\\onedrive\\documents\\github\\templeschedulerapp\\backend\\templeschedulerbackend\\templeschedulerbackend\\controllers\\templeschedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DAF9A41-298F-4904-B7FE-6325C118119E}|TempleSchedulerBackend\\TempleSchedulerBackend.csproj|solutionrelative:templeschedulerbackend\\controllers\\templeschedulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DAF9A41-298F-4904-B7FE-6325C118119E}|TempleSchedulerBackend\\TempleSchedulerBackend.csproj|c:\\users\\spenc\\onedrive\\documents\\github\\templeschedulerapp\\backend\\templeschedulerbackend\\templeschedulerbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DAF9A41-298F-4904-B7FE-6325C118119E}|TempleSchedulerBackend\\TempleSchedulerBackend.csproj|solutionrelative:templeschedulerbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DAF9A41-298F-4904-B7FE-6325C118119E}|TempleSchedulerBackend\\TempleSchedulerBackend.csproj|c:\\users\\spenc\\onedrive\\documents\\github\\templeschedulerapp\\backend\\templeschedulerbackend\\templeschedulerbackend\\models\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DAF9A41-298F-4904-B7FE-6325C118119E}|TempleSchedulerBackend\\TempleSchedulerBackend.csproj|solutionrelative:templeschedulerbackend\\models\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DAF9A41-298F-4904-B7FE-6325C118119E}|TempleSchedulerBackend\\TempleSchedulerBackend.csproj|c:\\users\\spenc\\onedrive\\documents\\github\\templeschedulerapp\\backend\\templeschedulerbackend\\templeschedulerbackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7DAF9A41-298F-4904-B7FE-6325C118119E}|TempleSchedulerBackend\\TempleSchedulerBackend.csproj|solutionrelative:templeschedulerbackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DAF9A41-298F-4904-B7FE-6325C118119E}|TempleSchedulerBackend\\TempleSchedulerBackend.csproj|c:\\users\\spenc\\onedrive\\documents\\github\\templeschedulerapp\\backend\\templeschedulerbackend\\templeschedulerbackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7DAF9A41-298F-4904-B7FE-6325C118119E}|TempleSchedulerBackend\\TempleSchedulerBackend.csproj|solutionrelative:templeschedulerbackend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\spenc\\OneDrive\\Documents\\GitHub\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\Program.cs",
+              "RelativeDocumentMoniker": "TempleSchedulerBackend\\Program.cs",
+              "ToolTip": "C:\\Users\\spenc\\OneDrive\\Documents\\GitHub\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\Program.cs",
+              "RelativeToolTip": "TempleSchedulerBackend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-22T18:23:10.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "C:\\Users\\spenc\\OneDrive\\Documents\\GitHub\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\Models\\UserLogin.cs",
+              "RelativeDocumentMoniker": "TempleSchedulerBackend\\Models\\UserLogin.cs",
+              "ToolTip": "C:\\Users\\spenc\\OneDrive\\Documents\\GitHub\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\Models\\UserLogin.cs",
+              "RelativeToolTip": "TempleSchedulerBackend\\Models\\UserLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:59:35.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\spenc\\OneDrive\\Documents\\GitHub\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\Models\\User.cs",
+              "RelativeDocumentMoniker": "TempleSchedulerBackend\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\spenc\\OneDrive\\Documents\\GitHub\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\Models\\User.cs",
+              "RelativeToolTip": "TempleSchedulerBackend\\Models\\User.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:59:11.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TempleScheduleController.cs",
+              "DocumentMoniker": "C:\\Users\\spenc\\OneDrive\\Documents\\GitHub\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\Controllers\\TempleScheduleController.cs",
+              "RelativeDocumentMoniker": "TempleSchedulerBackend\\Controllers\\TempleScheduleController.cs",
+              "ToolTip": "C:\\Users\\spenc\\OneDrive\\Documents\\GitHub\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\Controllers\\TempleScheduleController.cs",
+              "RelativeToolTip": "TempleSchedulerBackend\\Controllers\\TempleScheduleController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAkwA0AAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T15:54:26.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\spenc\\OneDrive\\Documents\\GitHub\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "TempleSchedulerBackend\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\spenc\\OneDrive\\Documents\\GitHub\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\appsettings.Development.json",
+              "RelativeToolTip": "TempleSchedulerBackend\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-19T22:10:40.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\spenc\\OneDrive\\Documents\\GitHub\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "TempleSchedulerBackend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\spenc\\OneDrive\\Documents\\GitHub\\TempleSchedulerApp\\backend\\TempleSchedulerBackend\\TempleSchedulerBackend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "TempleSchedulerBackend\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-19T22:10:05.121Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
