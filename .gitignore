@@ -27,3 +27,7 @@ backend/TempleSchedulerBackend/.vs/TempleSchedulerBackend/DesignTimeBuild/.dtbca
 backend/TempleSchedulerBackend/TempleSchedulerBackend/obj/project.nuget.cache
 backend/TempleSchedulerBackend/TempleSchedulerBackend/obj/project.assets.json
 backend/TempleSchedulerBackend/TempleSchedulerBackend/obj/TempleSchedulerBackend.csproj.nuget.g.targets
+
+obj/
+backend/TempleSchedulerBackend/TempleSchedulerBackend/obj/
+**/obj/
