@@ -7,10 +7,12 @@ import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 import AvailabilityResults from "./AvailabilityResults";
+import TempleSelect from "./TempleSelect";
 
 const TempleScheduler = () => {
-  const [temples, setTemples] = useState<string[]>(["Provo Temple"]); //give the option for Provo Temple right now while it isn't connected to get the temples from the API
-  const [selectedTemple, setSelectedTemple] = useState("");
+  const [temples, setTemples] = useState<string[]>(["Provo Temple", "Orem Temple", "Payson Temple"]); //give these options for right now while it isn't connected to get the temples from the API
+  const [participants, setParticipants] = useState<number>(1);
+  const [selectedTemples, setSelectedTemples] = useState<string[]>([]);
   const [selectedOrdinances, setSelectedOrdinances] = useState<string[]>([]);
   const [selectedDate, setSelectedDate] = useState<Date | null>(null);
   const [selectedTimes, setSelectedTimes] = useState<string[]>(["Any Time"]);
@@ -67,13 +69,13 @@ const TempleScheduler = () => {
   }, []);
 
   const handleSubmit = async () => {
-    if (!selectedTemple || selectedOrdinances.length === 0 || !selectedDate) {
+    if (!selectedTemples || selectedOrdinances.length === 0 || !selectedDate) {
       alert("Please select a temple, ordinance(s), and date.");
       return;
     }
     try {
       const response = await fetch(
-        `/api/availability?temple=${selectedTemple}&ordinances=${selectedOrdinances.join(
+        `/api/availability?temple=${selectedTemples}&ordinances=${selectedOrdinances.join(
           ","
         )}&date=${selectedDate.toISOString()}&times=${selectedTimes.join(",")}`
       );
@@ -112,24 +114,32 @@ const TempleScheduler = () => {
 
       <div className="space-y-4">
         {/* Temple Dropdown */}
+        <TempleSelect
+          temples={temples}
+          selectedTemples={selectedTemples}
+          setSelectedTemples={setSelectedTemples}
+        />
+        <br />
+
+        {/* Participants Dropdown */}
         <div>
           <label className="block text-gray-700 font-medium mb-1">
-            Temple(s):{" "}
+            Number of Participants: 
           </label>
           <select
-            value={selectedTemple}
-            onChange={(e) => setSelectedTemple(e.target.value)}
+            value={participants}
+            onChange={(e) => setParticipants(Number(e.target.value))}
             className="w-full border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500"
           >
-            <option value="">Select a Temple</option>
-            {temples.map((temple, index) => (
-              <option key={index} value={temple}>
-                {temple}
+            {[1, 2, 3, 4].map((num) => (
+              <option key={num} value={num}>
+                {num}
               </option>
             ))}
           </select>
         </div>
-        <br />
+        <br/>
+
         {/* Ordinance Checkboxes */}
         <div>
           <label className="block text-gray-700 font-medium mb-1">
@@ -214,7 +224,7 @@ const TempleScheduler = () => {
       {/* Availability Results */}
       {availability && (
         <AvailabilityResults
-          selectedTemple={selectedTemple}
+          selectedTemple={selectedTemples.join(", ")} // Convert array to a comma-separated string
           selectedOrdinances={selectedOrdinances}
           selectedDate={selectedDate}
           selectedTimes={selectedTimes}

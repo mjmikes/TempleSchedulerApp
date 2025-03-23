@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+backend/TempleSchedulerBackend/.vs/TempleSchedulerBackend/FileContentIndex/08bc1673-b435-4480-b093-f2cac01744a5.vsidx
+backend/TempleSchedulerBackend/.vs/TempleSchedulerBackend/DesignTimeBuild/.dtbcache.v2
+backend/TempleSchedulerBackend/TempleSchedulerBackend/obj/project.nuget.cache
+backend/TempleSchedulerBackend/TempleSchedulerBackend/obj/project.assets.json
+backend/TempleSchedulerBackend/TempleSchedulerBackend/obj/TempleSchedulerBackend.csproj.nuget.g.targets
