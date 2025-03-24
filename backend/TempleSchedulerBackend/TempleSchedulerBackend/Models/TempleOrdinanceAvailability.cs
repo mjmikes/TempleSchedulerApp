@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace TempleSchedulerBackend.Models;
 
 public partial class TempleOrdinanceAvailability
 {
+    [Key]
     public int AvailabilityId { get; set; }
 
     public int TempleId { get; set; }

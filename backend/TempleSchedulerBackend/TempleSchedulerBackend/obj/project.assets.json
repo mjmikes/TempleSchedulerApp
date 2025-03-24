@@ -2850,9 +2850,9 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore >= 8.0.13",
-      "Microsoft.EntityFrameworkCore.Design >= 8.0.13",
-      "Microsoft.EntityFrameworkCore.Sqlite >= 8.0.13",
-      "Microsoft.EntityFrameworkCore.Tools >= 8.0.13",
+      "Microsoft.EntityFrameworkCore.design >= 8.0.13",
+      "Microsoft.EntityFrameworkCore.sqlite >= 8.0.13",
+      "Microsoft.EntityFrameworkCore.tools >= 8.0.13",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -2902,17 +2902,17 @@
             "target": "Package",
             "version": "[8.0.13, )"
           },
-          "Microsoft.EntityFrameworkCore.Design": {
+          "Microsoft.EntityFrameworkCore.design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.13, )"
           },
-          "Microsoft.EntityFrameworkCore.Sqlite": {
+          "Microsoft.EntityFrameworkCore.sqlite": {
             "target": "Package",
             "version": "[8.0.13, )"
           },
-          "Microsoft.EntityFrameworkCore.Tools": {
+          "Microsoft.EntityFrameworkCore.tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",

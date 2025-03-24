@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace TempleSchedulerBackend.Models;
 
 public partial class Temple
 {
+    [Key]
     public int TempleId { get; set; }
 
     public string Name { get; set; } = null!;
@@ -18,8 +20,4 @@ public partial class Temple
     public string Zip { get; set; } = null!;
 
     public string? PhoneNumber { get; set; }
-
-    public virtual ICollection<AppointmentSlot> AppointmentSlots { get; set; } = new List<AppointmentSlot>();
-
-    public virtual ICollection<TempleOrdinanceAvailability> TempleOrdinanceAvailabilities { get; set; } = new List<TempleOrdinanceAvailability>();
 }

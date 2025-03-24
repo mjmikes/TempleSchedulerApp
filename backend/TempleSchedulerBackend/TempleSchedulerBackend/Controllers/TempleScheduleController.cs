@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using TempleSchedulerBackend.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace TempleSchedulerBackend.Controllers
 {
@@ -15,20 +16,19 @@ namespace TempleSchedulerBackend.Controllers
             _context = temp;
         }
     
-        [HttpGet(Name = "Appointments")]
+        [HttpGet("GetAppointments")]
         public IEnumerable<Appointment> Get()
         {
             return _context.Appointments;
         }
         
-        [HttpPost(Name = "Appointment")]
-        public ActionResult<Appointment> CreateAppointment([FromBody] Appointment newAppointment)
+        [HttpPost("PostAppointment")]
+        public ActionResult CreateAppointment(Appointment newAppointment)
         {
-
             _context.Appointments.Add(newAppointment);
             _context.SaveChanges();
 
-            return CreatedAtAction(nameof(Get), new { id = newAppointment.AppointmentId }, newAppointment);
+            return Ok();
         }
     }
 }

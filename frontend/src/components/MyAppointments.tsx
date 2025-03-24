@@ -4,6 +4,36 @@ import React from "react";
 import { AppointmentCard } from "./AppointmentCard";
 import { AddAppointmentButton } from "./AddAppointmentButton";
 
+// HI here is the get request for appointments
+// https://localhost:5000/TempleSchedule/GetAppointments
+// https://localhost:5000/TempleSchedule/PostAppointment
+// Example Body = to post a temple appointment.
+// [
+//   {
+//     "userId": 0,
+//     "slotId": 0,
+//     "guestCount": 0,
+//     "status": "string" // this needs to be one of the 3 required types.
+//   }
+// ]
+
+
+const fetchAppointments = async () => {
+
+    const response = await fetch("https://localhost:5000/TempleSchedule/GetAppointments");       
+    const data = await response.json();
+    console.log(data);
+
+};
+
+fetchAppointments();
+
+
+
+
+
+
+
 const MyAppointments: React.FC = () => {
   const appointments = [
     {
