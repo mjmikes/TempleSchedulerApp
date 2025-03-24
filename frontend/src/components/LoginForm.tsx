@@ -44,13 +44,21 @@ const LoginForm: React.FC = () => {
         onChange={(e) => setPassword(e.target.value)}
         placeholder="Password"
       />
+      <br></br>
       <button type="submit">Login</button>
+      <button
+        type="button"
+        onClick={() => navigate("CreateUser")} // Navigate to Forgot Password page
+      >
+        Create User
+      </button>
       <button
         type="button"
         onClick={() => navigate("/forgot-password")} // Navigate to Forgot Password page
       >
         Forgot Password?
       </button>
+      <br></br>
     </form>
   );
 };
