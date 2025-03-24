@@ -1,4 +1,5 @@
 import React from "react";
+// import {useNavigate, useNavigation } from "react-router-dom"
 
 interface AppointmentCardProps {
   templeName: string;
@@ -7,6 +8,14 @@ interface AppointmentCardProps {
   type: string;
   imageUrl: string;
 }
+
+// function AppointmentCancellation() {
+//   const navigate = useNavigate();
+
+//   const handleCancel = () => {
+//     navigate("appointment-cancellation");
+//   }
+// }
 
 export const AppointmentCard: React.FC<AppointmentCardProps> = ({
   templeName,
@@ -34,7 +43,10 @@ export const AppointmentCard: React.FC<AppointmentCardProps> = ({
         </div>
         <div className="flex gap-4 items-center mt-4 w-full text-base leading-none whitespace-nowrap text-stone-900">
           <button className="overflow-hidden gap-2 self-stretch p-3 my-auto rounded-lg border border-solid bg-neutral-200 border-neutral-500">
-            Options
+            Edit
+          </button>
+          <button  className="overflow-hidden gap-2 self-stretch p-3 my-auto rounded-lg border border-solid bg-neutral-200 border-neutral-500">
+            Cancel
           </button>
           <div>
             <br></br>
