@@ -13,8 +13,6 @@ const AppointmentConfirmation: React.FC = () => {
       />
 
       <div className="relative w-full min-h-screen bg-white font-['Inter']">
-      
-
         <NavigationButton
           variant="menu"
           className="absolute left-[11px] top-[67px]"

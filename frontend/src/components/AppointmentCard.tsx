@@ -45,7 +45,7 @@ export const AppointmentCard: React.FC<AppointmentCardProps> = ({
           <button className="overflow-hidden gap-2 self-stretch p-3 my-auto rounded-lg border border-solid bg-neutral-200 border-neutral-500">
             Edit
           </button>
-          <button  className="overflow-hidden gap-2 self-stretch p-3 my-auto rounded-lg border border-solid bg-neutral-200 border-neutral-500">
+          <button className="overflow-hidden gap-2 self-stretch p-3 my-auto rounded-lg border border-solid bg-neutral-200 border-neutral-500">
             Cancel
           </button>
           <div>

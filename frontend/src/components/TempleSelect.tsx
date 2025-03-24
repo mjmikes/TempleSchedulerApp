@@ -19,9 +19,13 @@ const TempleSelect: React.FC<TempleSelectProps> = ({
       <label className="block text-gray-700 font-medium mb-1">Temple(s):</label>
       <Select
         options={options}
-        value={options.filter((option) => selectedTemples.includes(option.value))}
+        value={options.filter((option) =>
+          selectedTemples.includes(option.value)
+        )}
         onChange={(selectedOptions) =>
-          setSelectedTemples(selectedOptions ? selectedOptions.map((option) => option.value) : [])
+          setSelectedTemples(
+            selectedOptions ? selectedOptions.map((option) => option.value) : []
+          )
         }
         isMulti
         isSearchable

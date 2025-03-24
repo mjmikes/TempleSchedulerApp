@@ -24,13 +24,11 @@ export const CancelAppointmentContent: React.FC<ConfirmationContentProps> = ({
       />
 
       <section className="px-5 py-0 mt-10 text-4xl font-bold leading-10 text-center text-black max-sm:text-3xl max-sm:leading-9">
-        <h1>
-          Cancel Appointment?
-        </h1>
+        <h1>Cancel Appointment?</h1>
       </section>
 
       <p className="mx-auto mt-8 mb-0 text-lg font-semibold leading-6 text-center text-black max-w-[227px] max-sm:text-base max-sm:max-w-[90%]">
-         We hope to see you soon!
+        We hope to see you soon!
       </p>
 
       <section className="mt-5 text-base leading-6 text-center text-neutral-500 max-sm:text-sm">

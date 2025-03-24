@@ -6,8 +6,7 @@ export const AddAppointmentButton: React.FC = () => {
 
   return (
     <button
-    onClick={() => navigate("/add-appointment")} // Navigates to Add Appointment page
-
+      onClick={() => navigate("/add-appointment")} // Navigates to Add Appointment page
       style={{ position: "fixed", bottom: "20px", right: "20px" }}
       className="overflow-hidden z-50 self-end mt-2.5 max-w-full text-sm font-medium tracking-normal leading-none text-center text-fuchsia-50 rounded-2xl shadow-md bg-zinc-800 min-h-14 min-w-20 w-[183px]"
       aria-label="Add new appointment"

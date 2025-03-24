@@ -17,22 +17,15 @@ import { AddAppointmentButton } from "./AddAppointmentButton";
 //   }
 // ]
 
-
 const fetchAppointments = async () => {
-
-    const response = await fetch("https://localhost:5000/TempleSchedule/GetAppointments");       
-    const data = await response.json();
-    console.log(data);
-
+  const response = await fetch(
+    "https://localhost:5000/TempleSchedule/GetAppointments"
+  );
+  const data = await response.json();
+  console.log(data);
 };
 
 fetchAppointments();
-
-
-
-
-
-
 
 const MyAppointments: React.FC = () => {
   const appointments = [
