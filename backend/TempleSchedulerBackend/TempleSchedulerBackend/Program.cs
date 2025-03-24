@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using TempleSchedulerBackend.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -7,7 +10,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddDbContext<TempleScheduleContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("TempleScheduleConnection")));
+
+builder.Services.AddCors();
+
 var app = builder.Build();
+
+app.UseCors(x => x.WithOrigins("http://localhost:3000"));
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
