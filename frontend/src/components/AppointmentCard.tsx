@@ -25,34 +25,23 @@ export const AppointmentCard: React.FC<AppointmentCardProps> = ({
   imageUrl,
 }) => {
   return (
-    <article className="flex gap-6 items-start w-full min-w-60">
+    <div className="d-flex gap-3 align-items-start w-100 min-w-60 p-3 rounded mb-3">
       <img
         src={imageUrl}
-        alt={`${templeName}`}
-        className="object-contain shrink-0 w-40 aspect-square min-h-40 min-w-40"
+        alt={templeName}
+        className="img-fluid rounded" 
+        style={{ width: '160px', height: '160px', objectFit: 'cover' }}
       />
-      <div className="flex-1 shrink basis-0 min-w-40">
-        <div className="w-full">
-          <h2 className="text-xl font-semibold tracking-tight leading-tight text-stone-900">
-            {templeName}
-          </h2>
-          <p className="mt-2 text-base leading-6 text-neutral-500">
-            {date} <br />@{time} <br />
-            {type}
-          </p>
-        </div>
-        <div className="flex gap-4 items-center mt-4 w-full text-base leading-none whitespace-nowrap text-stone-900">
-          <button className="overflow-hidden gap-2 self-stretch p-3 my-auto rounded-lg border border-solid bg-neutral-200 border-neutral-500">
-            Edit
-          </button>
-          <button  className="overflow-hidden gap-2 self-stretch p-3 my-auto rounded-lg border border-solid bg-neutral-200 border-neutral-500">
-            Cancel
-          </button>
-          <div>
-            <br></br>
-          </div>
+      <div className="flex-grow-1 text-start">
+        <h2 className="h5 fw-semibold text-dark">{templeName}</h2>
+        <p className="mt-2 text-muted">
+          {date} <br /> @{time} <br /> {type}
+        </p>
+        <div className="d-flex gap-2 mt-3">
+          <button className="btn btn-outline-secondary">Edit</button>
+          <button className="btn btn-outline-secondary">Cancel</button>
         </div>
       </div>
-    </article>
+    </div>
   );
 };
