@@ -3,6 +3,7 @@ import MyAppointments from "./components/MyAppointments";
 import MobileNavigation from "./components/MobileNavigation";
 import "./App.css";
 import AppointmentCancellation from "./components/AppointmentCancellation";
+import TempleScheduler from "./components/TempleScheduler";
 
 function App() {
   
@@ -12,6 +13,7 @@ function App() {
      <Routes>
        <Route path="/" element={<MyAppointments />} />
        <Route path="/appointments" element={<MyAppointments />} />
+       <Route path="/add" element={<TempleScheduler />} />
     </Routes>
   </Router>
  );
