@@ -13,12 +13,8 @@
         "packagesPath": "/Users/jacobthomas/.nuget/packages/",
         "outputPath": "/Users/jacobthomas/Documents/byu_classes/winter_2025/IS401/TempleSchedulerApp/backend/TempleSchedulerBackend/TempleSchedulerBackend/obj/",
         "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/jacobthomas/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net8.0"
-        ],
+        "configFilePaths": ["/Users/jacobthomas/.nuget/NuGet/NuGet.Config"],
+        "originalTargetFrameworks": ["net8.0"],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -29,9 +25,7 @@
           }
         },
         "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
+          "warnAsError": ["NU1605"]
         },
         "restoreAuditProperties": {
           "enableAudit": "true",

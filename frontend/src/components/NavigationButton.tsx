@@ -49,11 +49,10 @@ export const NavigationButton: React.FC<NavigationButtonProps> = ({
 
   return (
     <button
-      className={`flex justify-center items-center rounded-lg border border-solid ${
-        isMenu
-          ? "w-11 h-11 bg-white border-black"
-          : "w-[55px] h-[55px] bg-black border-black"
-      } ${className}`}
+      className={`d-flex justify-content-center align-items-center rounded-circle border border-dark ${
+        isMenu ? "bg-white text-dark" : "bg-dark text-white"
+      } shadow ${className}`}
+      style={{ width: "44px", height: "44px" }}
       aria-label={isMenu ? "Open menu" : "Go back"}
     >
       {isMenu ? <MenuIcon /> : <BackIcon />}

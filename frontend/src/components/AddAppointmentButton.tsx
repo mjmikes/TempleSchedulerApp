@@ -7,19 +7,16 @@ export const AddAppointmentButton: React.FC = () => {
   return (
     <button
       onClick={() => navigate("/add-appointment")}
-      style={{ 
-        position: "fixed", 
-        bottom: "20px", 
-        right: "20px", 
-        height: "55px", 
-        width: "55px", 
-        borderRadius: "15px", 
-        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" 
-      }}
-      className="btn btn-secondary d-flex align-items-center justify-content-center"
+      className="btn btn-dark position-fixed bottom-0 end-0 m-3 rounded-pill shadow-lg d-flex align-items-center gap-2 px-3 py-2 add-appointment-button"
       aria-label="Add new appointment"
     >
-      <i className="fa-solid fa-plus fs-4"></i>
+      <img
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/995c4e5fdf4ac2cb6136fab965e20034b72ac6e1bc2dd058910d34775e576a1b"
+        alt=""
+        className="img-fluid"
+        style={{ width: "24px", height: "24px" }}
+      />
+      <span>Add Appointment</span>
     </button>
   );
 };

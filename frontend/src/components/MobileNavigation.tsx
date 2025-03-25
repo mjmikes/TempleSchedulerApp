@@ -7,10 +7,15 @@ const MobileNavigation: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <main className="relative w-full min-h-screen bg-slate-700">
+    <>
+      {/* Menu Button */}
       <MenuButton onClick={() => setIsOpen(!isOpen)} />
-      {isOpen && <NavigationMenu />}
-    </main>
+
+      {/* Sidebar Menu (Only Renders When Open) */}
+      {isOpen && (
+        <NavigationMenu isOpen={isOpen} onClose={() => setIsOpen(false)} />
+      )}
+    </>
   );
 };
 

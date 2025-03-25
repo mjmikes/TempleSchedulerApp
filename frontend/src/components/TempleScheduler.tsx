@@ -4,13 +4,16 @@ import DatePicker from "react-datepicker";
 //npm install react-datepicker @types/react-datepicker
 //npm install date-fns
 
-
 import "react-datepicker/dist/react-datepicker.css";
 import AvailabilityResults from "./AvailabilityResults";
 import TempleSelect from "./TempleSelect";
 
 const TempleScheduler = () => {
-  const [temples, setTemples] = useState<string[]>(["Provo Temple", "Orem Temple", "Payson Temple"]); //give these options for right now while it isn't connected to get the temples from the API
+  const [temples, setTemples] = useState<string[]>([
+    "Provo Temple",
+    "Orem Temple",
+    "Payson Temple",
+  ]); //give these options for right now while it isn't connected to get the temples from the API
   const [participants, setParticipants] = useState<number>(1);
   const [selectedTemples, setSelectedTemples] = useState<string[]>([]);
   const [selectedOrdinances, setSelectedOrdinances] = useState<string[]>([]);
@@ -124,7 +127,7 @@ const TempleScheduler = () => {
         {/* Participants Dropdown */}
         <div>
           <label className="block text-gray-700 font-medium mb-1">
-            Number of Participants: 
+            Number of Participants:
           </label>
           <select
             value={participants}
@@ -138,7 +141,7 @@ const TempleScheduler = () => {
             ))}
           </select>
         </div>
-        <br/>
+        <br />
 
         {/* Ordinance Checkboxes */}
         <div>
