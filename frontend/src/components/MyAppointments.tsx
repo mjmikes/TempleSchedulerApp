@@ -80,7 +80,7 @@ const MyAppointments: React.FC = () => {
   ];
 
   return (
-    <main className="flex flex-col mx-auto w-full bg-white max-w-[480px] mt-4">
+    <main className="flex flex-col mx-auto w-full bg-white w-100 mt-4">
       <div className="fixed top-0 left-0 right-0 z-20 bg-white">
         <div className="flex justify-between items-center p-6 w-full">
           <h1 className="text-2xl fw-bold tracking-tight leading-tight text-stone-900 flex-grow text-center">
