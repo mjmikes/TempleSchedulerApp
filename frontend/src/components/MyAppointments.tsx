@@ -29,11 +29,6 @@ const fetchAppointments = async () => {
 fetchAppointments();
 
 
-
-
-
-
-
 const MyAppointments: React.FC = () => {
   const appointments = [
     {
@@ -87,10 +82,10 @@ const MyAppointments: React.FC = () => {
   ];
 
   return (
-    <main className="flex flex-col mx-auto w-full bg-white max-w-[480px]">
+    <main className="flex flex-col mx-auto w-full bg-white max-w-[480px] mt-4">
       <div className="fixed top-0 left-0 right-0 z-20 bg-white">
         <div className="flex justify-between items-center p-6 w-full">
-          <h1 className="text-2xl font-semibold tracking-tight leading-tight text-stone-900 flex-grow text-center">
+          <h1 className="text-2xl fw-bold tracking-tight leading-tight text-stone-900 flex-grow text-center">
             My Temple Appointments
           </h1>
           <div style={{ width: 48 }}> {/* Invisible spacer for symmetry */} </div>
