@@ -6,7 +6,7 @@ export const AddAppointmentButton: React.FC = () => {
 
   return (
     <button
-      onClick={() => navigate("/add")}
+      onClick={() => navigate("/add-appointment")}
       style={{ 
         position: "fixed", 
         bottom: "20px", 
@@ -19,13 +19,7 @@ export const AddAppointmentButton: React.FC = () => {
       className="btn btn-secondary d-flex align-items-center justify-content-center"
       aria-label="Add new appointment"
     >
-      <img
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/995c4e5fdf4ac2cb6136fab965e20034b72ac6e1bc2dd058910d34775e576a1b"
-        alt=""
-        className="img-fluid"
-        style={{ width: "24px", height: "24px" }}
-      />
-      <span>Add Appointment</span>
+      <i className="fa-solid fa-plus fs-4"></i>
     </button>
   );
 };

@@ -14,16 +14,10 @@ function App() {
       <Routes>
        <Route path="/" element={<MyAppointments />} />
        <Route path="/appointments" element={<MyAppointments />} />
-<<<<<<< Updated upstream
-       <Route path="/add-appointment" element={<TempleScheduler />} />
-      </Routes>
-    </Router>
-=======
        <Route path="/add" element={<TempleScheduler />} />
        <Route path="/login" element={<LoginPage />} />
     </Routes>
   </Router>
->>>>>>> Stashed changes
  );
 }
 
