@@ -179,3 +179,7 @@ body {
 .church-float-button:hover {
   background: #555;
 }
+
+.add-appointment-button {
+  background-color: #1e293b !important;
+}

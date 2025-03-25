@@ -7,7 +7,7 @@ export const AddAppointmentButton: React.FC = () => {
   return (
     <button
       onClick={() => navigate("/add-appointment")}
-      className="btn btn-dark position-fixed bottom-0 end-0 m-3 rounded-pill shadow-lg d-flex align-items-center gap-2 px-3 py-2"
+      className="btn btn-dark position-fixed bottom-0 end-0 m-3 rounded-pill shadow-lg d-flex align-items-center gap-2 px-3 py-2 add-appointment-button"
       aria-label="Add new appointment"
     >
       <img
