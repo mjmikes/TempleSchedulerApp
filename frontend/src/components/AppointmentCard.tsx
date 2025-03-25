@@ -1,5 +1,5 @@
 import React from "react";
-// import {useNavigate, useNavigation } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 interface AppointmentCardProps {
   templeName: string;
@@ -9,14 +9,6 @@ interface AppointmentCardProps {
   imageUrl: string;
 }
 
-// function AppointmentCancellation() {
-//   const navigate = useNavigate();
-
-//   const handleCancel = () => {
-//     navigate("appointment-cancellation");
-//   }
-// }
-
 export const AppointmentCard: React.FC<AppointmentCardProps> = ({
   templeName,
   date,
@@ -24,6 +16,12 @@ export const AppointmentCard: React.FC<AppointmentCardProps> = ({
   type,
   imageUrl,
 }) => {
+  const navigate = useNavigate();
+
+  const handleEdit = () => {
+    navigate("/cancel-appointment"); // Change this to your actual route
+  };
+
   return (
     <article className="flex gap-6 items-start w-full min-w-60">
       <img
@@ -42,10 +40,13 @@ export const AppointmentCard: React.FC<AppointmentCardProps> = ({
           </p>
         </div>
         <div className="flex gap-4 items-center mt-4 w-full text-base leading-none whitespace-nowrap text-stone-900">
-          <button className="overflow-hidden gap-2 self-stretch p-3 my-auto rounded-lg border border-solid bg-neutral-200 border-neutral-500">
+          <button
+            className="overflow-hidden gap-2 self-stretch p-3 my-auto rounded-lg border border-solid bg-neutral-200 border-neutral-500"
+            onClick={handleEdit}
+          >
             Edit
           </button>
-          <button  className="overflow-hidden gap-2 self-stretch p-3 my-auto rounded-lg border border-solid bg-neutral-200 border-neutral-500">
+          <button className="overflow-hidden gap-2 self-stretch p-3 my-auto rounded-lg border border-solid bg-neutral-200 border-neutral-500">
             Cancel
           </button>
           <div>

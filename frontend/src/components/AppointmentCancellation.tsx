@@ -2,7 +2,6 @@
 import React from "react";
 import { NavigationButton } from "./NavigationButton";
 import { CancelAppointmentContent } from "./CancelAppointmentContent";
-import { ReminderButton } from "./ReminderButton";
 
 const AppointmentCancellation: React.FC = () => {
   return (
@@ -27,8 +26,6 @@ const AppointmentCancellation: React.FC = () => {
           time="10am"
           type="Endowment"
         />
-
-        <ReminderButton />
 
         <NavigationButton variant="back" className="absolute left-3 bottom-4" />
       </div>
