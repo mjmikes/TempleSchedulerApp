@@ -80,26 +80,33 @@ const MyAppointments: React.FC = () => {
   ];
 
   return (
-    <main className="flex flex-col mx-auto w-full bg-white max-w-[480px]">
-      <div className="fixed top-0 left-0 right-0 z-20 bg-white">
-        <div className="flex justify-between items-center p-6 w-full">
-          <h1 className="text-2xl font-semibold tracking-tight leading-tight text-stone-900 flex-grow text-center">
+    <main className="container bg-white p-3 min-vh-100">
+      {/* Header */}
+      <div className="fixed-top bg-white py-3 border-bottom shadow-sm">
+        <div className="d-flex justify-content-between align-items-center px-4">
+          <h1 className="h4 fw-semibold text-center flex-grow-1 m-0">
             My Temple Appointments
           </h1>
-          <div style={{ width: 48 }}>
-            {" "}
-            {/* Invisible spacer for symmetry */}{" "}
-          </div>
+          <div style={{ width: "48px" }}></div> {/* Spacer for symmetry */}
         </div>
       </div>
 
-      <section className="pt-24 p-6 w-full bg-white min-h-screen">
-        {appointments.map((appointment, index) => (
-          <div key={index} className={index > 0 ? "mt-12" : ""}>
-            <AppointmentCard {...appointment} />
-          </div>
-        ))}
+      {/* Appointment List */}
+      <section className="pt-5 pb-3">
+        {appointments.length > 0 ? (
+          appointments.map((appointment, index) => (
+            <div key={index} className={`mt-${index > 0 ? 4 : 0}`}>
+              <AppointmentCard {...appointment} />
+            </div>
+          ))
+        ) : (
+          <p className="text-center text-muted mt-5">
+            No appointments scheduled.
+          </p>
+        )}
       </section>
+
+      {/* Floating Button */}
       <AddAppointmentButton />
     </main>
   );

@@ -6,22 +6,17 @@ export const AddAppointmentButton: React.FC = () => {
 
   return (
     <button
-      onClick={() => navigate("/add-appointment")} // Navigates to Add Appointment page
-      style={{ position: "fixed", bottom: "20px", right: "20px" }}
-      className="overflow-hidden z-50 self-end mt-2.5 max-w-full text-sm font-medium tracking-normal leading-none text-center text-fuchsia-50 rounded-2xl shadow-md bg-zinc-800 min-h-14 min-w-20 w-[183px]"
+      onClick={() => navigate("/add-appointment")}
+      className="btn btn-dark position-fixed bottom-0 end-0 m-3 rounded-pill shadow-lg d-flex align-items-center gap-2 px-3 py-2"
       aria-label="Add new appointment"
     >
-      <div
-        className="flex flex-1 items-center justify-center py-4 px-4"
-        style={{ alignItems: "flex-start" }}
-      >
-        <img
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/995c4e5fdf4ac2cb6136fab965e20034b72ac6e1bc2dd058910d34775e576a1b"
-          alt=""
-          className="object-contain w-6 h-6" // Simplified class
-        />
-        <span style={{ transform: "translateY(-50%)" }}>Add Appointment</span>
-      </div>
+      <img
+        src="https://cdn.builder.io/api/v1/image/assets/TEMP/995c4e5fdf4ac2cb6136fab965e20034b72ac6e1bc2dd058910d34775e576a1b"
+        alt=""
+        className="img-fluid"
+        style={{ width: "24px", height: "24px" }}
+      />
+      <span>Add Appointment</span>
     </button>
   );
 };

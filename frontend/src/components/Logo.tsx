@@ -8,7 +8,6 @@ export const Logo: React.FC = () => {
       viewBox="0 0 122 111"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
     >
       <ellipse cx="61" cy="55.5" rx="61" ry="55.5" fill="url(#pattern0)" />
       <defs>
