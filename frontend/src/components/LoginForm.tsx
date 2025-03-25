@@ -1,13 +1,17 @@
 "use client";
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
 
 export const LoginForm: React.FC = () => {
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle login logic here
+    // After successful login:
+    navigate("/appointments");
   };
 
   return (
@@ -56,3 +60,5 @@ export const LoginForm: React.FC = () => {
     </form>
   );
 };
+
+export default LoginForm;
