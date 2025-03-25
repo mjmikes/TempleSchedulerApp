@@ -13,46 +13,50 @@ export const LoginForm: React.FC = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-8 items-center mt-8 w-full max-w-[296px] max-sm:max-w-[90%]"
+      style={{width: 300}}
     >
-      <div className="flex items-center px-4 py-0 w-full rounded bg-neutral-100 h-[58px] max-sm:h-[50px]">
+      <div className="mb-3">
         <input
           type="text"
           placeholder="Username"
           value={username}
           onChange={(e) => setUsername(e.target.value)}
-          className="text-lg text-black border-[none] bg-transparent w-full outline-none"
+          className="form-control"
           aria-label="Username"
         />
       </div>
-      <div className="flex items-center px-4 py-0 w-full rounded bg-neutral-100 h-[58px] max-sm:h-[50px]">
+      <div className="mb-3">
         <input
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className="text-lg text-black border-[none] bg-transparent w-full outline-none"
+          className="form-control"
           aria-label="Password"
         />
       </div>
-      <button
-        type="submit"
-        className="px-6 py-2 mt-6 text-base text-black rounded cursor-pointer bg-neutral-100 border-[none] hover:bg-neutral-200 transition-colors"
-      >
-        Login
-      </button>
-      <button
-        type="button"
-        className="px-4 py-2 text-base text-black rounded cursor-pointer bg-neutral-100 hover:bg-neutral-200 transition-colors w-full text-center"
-      >
-        Forgot Password?
-      </button>
-      <button
-        type="button"
-        className="px-4 py-2 text-base text-black rounded cursor-pointer bg-neutral-100 hover:bg-neutral-200 transition-colors w-full text-center"
-      >
-        New User?
-      </button>
+      <div className="">
+        <button
+          type="submit"
+          className="btn btn-secondary mb-5"
+        >
+          Login
+        </button>
+        <br/>
+        <button
+          type="button"
+          className="btn btn-outline-secondary mb-2"
+        >
+          Forgot Password?
+        </button>
+        <br/>
+        <button
+          type="button"
+          className="btn btn-outline-secondary mb-2"
+        >
+          New User?
+        </button>
+      </div>
     </form>
   );
 };

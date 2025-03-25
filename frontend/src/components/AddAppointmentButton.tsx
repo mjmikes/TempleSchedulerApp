@@ -6,8 +6,22 @@ export const AddAppointmentButton: React.FC = () => {
 
   return (
     <button
+<<<<<<< Updated upstream
       onClick={() => navigate("/add-appointment")}
       className="btn btn-dark position-fixed bottom-0 end-0 m-3 rounded-pill shadow-lg d-flex align-items-center gap-2 px-3 py-2 add-appointment-button"
+=======
+      onClick={() => navigate("/add")}
+      style={{ 
+        position: "fixed", 
+        bottom: "20px", 
+        right: "20px", 
+        height: "55px", 
+        width: "55px", 
+        borderRadius: "15px", 
+        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)" 
+      }}
+      className="btn btn-secondary d-flex align-items-center justify-content-center"
+>>>>>>> Stashed changes
       aria-label="Add new appointment"
     >
       <img
