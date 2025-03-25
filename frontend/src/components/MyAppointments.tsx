@@ -17,17 +17,15 @@ import { AddAppointmentButton } from "./AddAppointmentButton";
 //   }
 // ]
 
-
 const fetchAppointments = async () => {
-
-    const response = await fetch("https://localhost:5000/TempleSchedule/GetAppointments");       
-    const data = await response.json();
-    console.log(data);
-
+  const response = await fetch(
+    "https://localhost:5000/TempleSchedule/GetAppointments"
+  );
+  const data = await response.json();
+  console.log(data);
 };
 
 fetchAppointments();
-
 
 const MyAppointments: React.FC = () => {
   const appointments = [
@@ -88,17 +86,26 @@ const MyAppointments: React.FC = () => {
           <h1 className="text-2xl fw-bold tracking-tight leading-tight text-stone-900 flex-grow text-center">
             My Temple Appointments
           </h1>
-          <div style={{ width: 48 }}> {/* Invisible spacer for symmetry */} </div>
+          <div style={{ width: "48px" }}></div> {/* Spacer for symmetry */}
         </div>
       </div>
 
-      <section className="pt-24 p-6 w-full bg-white min-h-screen">
-        {appointments.map((appointment, index) => (
-          <div key={index} className={index > 0 ? "mt-12" : ""}>
-            <AppointmentCard {...appointment} />
-          </div>
-        ))}
+      {/* Appointment List */}
+      <section className="pt-5 pb-3">
+        {appointments.length > 0 ? (
+          appointments.map((appointment, index) => (
+            <div key={index} className={`mt-${index > 0 ? 4 : 0}`}>
+              <AppointmentCard {...appointment} />
+            </div>
+          ))
+        ) : (
+          <p className="text-center text-muted mt-5">
+            No appointments scheduled.
+          </p>
+        )}
       </section>
+
+      {/* Floating Button */}
       <AddAppointmentButton />
     </main>
   );
