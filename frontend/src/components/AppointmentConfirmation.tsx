@@ -27,8 +27,6 @@ const AppointmentConfirmation: React.FC = () => {
         />
 
         <ReminderButton />
-
-        <NavigationButton variant="back" className="absolute left-3 bottom-4" />
       </div>
     </>
   );

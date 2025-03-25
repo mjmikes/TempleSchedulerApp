@@ -1,8 +1,6 @@
 "use client";
-import * as React from "react";
 //import { StatusBar } from "./StatusBar";
 import { LoginForm } from "./LoginForm";
-import { Logo } from "./Logo";
 
 export default function LoginPage() {
   return (

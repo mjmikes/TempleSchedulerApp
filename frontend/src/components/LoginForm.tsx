@@ -1,20 +1,25 @@
 "use client";
 import * as React from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 export const LoginForm: React.FC = () => {
   const [username, setUsername] = React.useState("");
   const [password, setPassword] = React.useState("");
+  const navigate = useNavigate(); // Initialize navigate function
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle login logic here
+    // Simulate successful login (replace this with your actual login logic)
+    if (username === "admin" && password === "admin") {
+      navigate("/appointments"); // Navigate to appointments on successful login
+    } else {
+      alert("Incorrect username or password!"); // Alert for incorrect credentials
+    }
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      style={{width: 300}}
-    >
+    <form onSubmit={handleSubmit} style={{ width: 300 }}>
       <div className="mb-3">
         <input
           type="text"
@@ -35,28 +40,15 @@ export const LoginForm: React.FC = () => {
           aria-label="Password"
         />
       </div>
-      <div className="">
-        <button
-          type="submit"
-          className="btn btn-secondary mb-5"
-        >
-          Login
-        </button>
-        <br/>
-        <button
-          type="button"
-          className="btn btn-outline-secondary mb-2"
-        >
-          Forgot Password?
-        </button>
-        <br/>
-        <button
-          type="button"
-          className="btn btn-outline-secondary mb-2"
-        >
-          New User?
-        </button>
-      </div>
+      <button type="submit" className="btn btn-secondary mb-5">
+        Login
+      </button>
+      <button type="button" className="btn btn-outline-secondary mb-2">
+        Forgot Password?
+      </button>
+      <button type="button" className="btn btn-outline-secondary mb-2">
+        New User?
+      </button>
     </form>
   );
 };

@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 interface ConfirmationContentProps {
   templeImage: string;
@@ -15,28 +16,48 @@ export const CancelAppointmentContent: React.FC<ConfirmationContentProps> = ({
   time,
   type,
 }) => {
+  const navigate = useNavigate(); // Initialize navigate function
+
+  // Function to handle back navigation
+  const handleBack = () => {
+    navigate(-1); // Go back to the previous page
+  };
+
   return (
-    <main className="flex flex-col items-center">
+    <main className="flex flex-col items-center p-5">
+      <h1 className="text-3xl font-bold text-center mt-5 mb-3">
+        Cancel Appointment?
+      </h1>
       <img
         src={templeImage}
-        alt="Temple"
-        className="object-contain h-[159px] w-[168px] mt-24"
+        alt={templeName}
+        className="mt-3 mb-4 object-contain h-[200px] w-[200px] rounded-full shadow-lg"
       />
 
-      <section className="px-5 py-0 mt-10 text-4xl font-bold leading-10 text-center text-black max-sm:text-3xl max-sm:leading-9">
-        <h1>Cancel Appointment?</h1>
+      <section className="text-center mt-4">
+        <h2 className="text-2xl font-semibold">{templeName}</h2>
+        <p className="text-lg text-neutral-600">
+          {date} at {time}
+        </p>
+        <p className="text-lg text-neutral-600">{type}</p>
+        <p className="text-sm text-neutral-500 mt-2">
+          Are you sure you want to cancel this appointment?
+        </p>
       </section>
 
-      <p className="mx-auto mt-8 mb-0 text-lg font-semibold leading-6 text-center text-black max-w-[227px] max-sm:text-base max-sm:max-w-[90%]">
-        We hope to see you soon!
-      </p>
+      <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+        <button className="bg-red-500 text-white py-2 px-6 rounded-lg hover:bg-red-600 transition-colors">
+          Confirm Cancellation
+        </button>
+        </div>
 
-      <section className="mt-5 text-base leading-6 text-center text-neutral-500 max-sm:text-sm">
-        <p>{templeName}</p>
-        <p>{date}</p>
-        <p>@{time}</p>
-        <p>{type}</p>
-      </section>
+        <button
+          onClick={handleBack}
+          className="bg-gray-500 text-white py-2 px-6 rounded-lg hover:bg-gray-600 transition-colors"
+        >
+          Go Back
+        </button>
+      
     </main>
   );
 };

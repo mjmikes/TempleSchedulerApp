@@ -6,7 +6,7 @@ export const AddAppointmentButton: React.FC = () => {
 
   return (
     <button
-      onClick={() => navigate("/add-appointment")}
+      onClick={() => navigate("/schedule")}
       style={{ 
         position: "fixed", 
         bottom: "20px", 
