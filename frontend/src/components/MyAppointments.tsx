@@ -80,11 +80,10 @@ const MyAppointments: React.FC = () => {
   ];
 
   return (
-    <main className="container bg-white p-3 min-vh-100">
-      {/* Header */}
-      <div className="fixed-top bg-white py-3 border-bottom shadow-sm">
-        <div className="d-flex justify-content-between align-items-center px-4">
-          <h1 className="h4 fw-semibold text-center flex-grow-1 m-0">
+    <main className="flex flex-col mx-auto w-full bg-white max-w-[480px] mt-4">
+      <div className="fixed top-0 left-0 right-0 z-20 bg-white">
+        <div className="flex justify-between items-center p-6 w-full">
+          <h1 className="text-2xl fw-bold tracking-tight leading-tight text-stone-900 flex-grow text-center">
             My Temple Appointments
           </h1>
           <div style={{ width: "48px" }}></div> {/* Spacer for symmetry */}

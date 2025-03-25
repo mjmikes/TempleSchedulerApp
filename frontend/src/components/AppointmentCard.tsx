@@ -33,7 +33,7 @@ export const AppointmentCard: React.FC<AppointmentCardProps> = ({
           className="object-contain w-full h-full rounded-lg mx-auto"
         />{" "}
       </div>
-      <p>_________________________________________</p>
+      <p>___________________________</p>
       <div className="flex-1 shrink basis-0 min-w-40">
         <h2 className="text-xl font-semibold tracking-tight leading-tight text-stone-900">
           {templeName}
