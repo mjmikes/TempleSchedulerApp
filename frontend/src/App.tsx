@@ -7,6 +7,8 @@ import AppointmentConfirmation from "./components/AppointmentConfirmation";
 import TempleScheduler from "./components/TempleScheduler";
 import LoginPage from "./components/LoginPage";
 import AvailabilityResults from "./components/AvailabilityResults";
+import ForgotPassword from "./components/ForgotPassword"; // Import ForgotPassword component
+import CreateUser from "./components/CreateUser"; // Import CreateUser component
 
 function App() {
   
@@ -21,6 +23,8 @@ function App() {
        <Route path="/cancel" element={<AppointmentCancellation />} />
        <Route path="/confirm" element={<AppointmentConfirmation />} />
        <Route path="/schedule" element={<TempleScheduler />} />
+       <Route path="/forgot-password" element={<ForgotPassword />} />{" "}
+       <Route path="/create-user" element={<CreateUser />} />{" "}
        <Route
          path="/availability"
          element={
