@@ -43,10 +43,10 @@ export const LoginForm: React.FC = () => {
       <button type="submit" className="btn btn-secondary mb-5">
         Login
       </button>
-      <button type="button" className="btn btn-outline-secondary mb-2">
+      <button type="button" className="btn btn-outline-secondary mb-2" onClick={() => navigate("/forgot-password")}>
         Forgot Password?
       </button>
-      <button type="button" className="btn btn-outline-secondary mb-2">
+      <button type="button" className="btn btn-outline-secondary mb-2" onClick={() => navigate("/create-user")}>
         New User?
       </button>
     </form>
