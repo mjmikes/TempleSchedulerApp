@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import '../styles/CreateUser.css';
 
 //Define CreateUser Component
 const CreateUser = () => {
@@ -41,7 +42,7 @@ const CreateUser = () => {
 
   // Returning the Form
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="forForm" onSubmit={handleSubmit}>
       <div>
         <input
           type="text"
@@ -61,8 +62,8 @@ const CreateUser = () => {
         {errors.password && <p style={{ color: "red" }}>{errors.password}</p>}
       </div>
 
-      <button type="submit">Create Account</button>
-      <button type="button" onClick={handleCancel}>
+      <button className="forButton" type="submit">Create Account</button>
+      <button className="forButton" type="button" onClick={handleCancel}>
         Cancel
       </button>
     </form>
