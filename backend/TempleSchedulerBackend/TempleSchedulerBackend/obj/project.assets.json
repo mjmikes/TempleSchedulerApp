@@ -2857,19 +2857,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/jacobthomas/.nuget/packages/": {}
+    "/Users/1jose/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jacobthomas/Documents/byu_classes/winter_2025/IS401/TempleSchedulerApp/backend/TempleSchedulerBackend/TempleSchedulerBackend/TempleSchedulerBackend.csproj",
+      "projectUniqueName": "/Users/1jose/Documents/GitHub/TempleSchedulerApp/backend/TempleSchedulerBackend/TempleSchedulerBackend/TempleSchedulerBackend.csproj",
       "projectName": "TempleSchedulerBackend",
-      "projectPath": "/Users/jacobthomas/Documents/byu_classes/winter_2025/IS401/TempleSchedulerApp/backend/TempleSchedulerBackend/TempleSchedulerBackend/TempleSchedulerBackend.csproj",
-      "packagesPath": "/Users/jacobthomas/.nuget/packages/",
-      "outputPath": "/Users/jacobthomas/Documents/byu_classes/winter_2025/IS401/TempleSchedulerApp/backend/TempleSchedulerBackend/TempleSchedulerBackend/obj/",
+      "projectPath": "/Users/1jose/Documents/GitHub/TempleSchedulerApp/backend/TempleSchedulerBackend/TempleSchedulerBackend/TempleSchedulerBackend.csproj",
+      "packagesPath": "/Users/1jose/.nuget/packages/",
+      "outputPath": "/Users/1jose/Documents/GitHub/TempleSchedulerApp/backend/TempleSchedulerBackend/TempleSchedulerBackend/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/jacobthomas/.nuget/NuGet/NuGet.Config"
+        "/Users/1jose/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -2942,7 +2942,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

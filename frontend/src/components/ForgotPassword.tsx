@@ -1,5 +1,7 @@
 // src/ForgotPassword.tsx
 import React, { useState } from "react";
+import "../styles/ForgotPassword.css";
+
 
 const ForgotPassword: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -19,6 +21,7 @@ const ForgotPassword: React.FC = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
+          placeholder="Enter email"
         />
         <br></br>
         <button type="submit">Send Reset Link</button>
