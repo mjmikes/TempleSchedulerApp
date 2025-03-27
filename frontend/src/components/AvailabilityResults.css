@@ -1,0 +1,43 @@
+/* Center the buttons and add vertical spacing */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between buttons */
+}
+
+/* Style the buttons */
+.button {
+    padding: 10px 10px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    background-color: #022852; /*  blue color */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    word-wrap: break-word; /* Ensures text wraps */
+    white-space: normal;
+}
+
+/* Hover effect */
+.button:hover,
+button:focus {
+    background-color: lightblue;
+}
+
+/* Click effect */
+.button:active {
+    background-color: navy;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
