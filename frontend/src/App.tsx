@@ -25,7 +25,9 @@ function App() {
        <Route path="/schedule" element={<TempleScheduler />} />
        <Route path="/forgot-password" element={<ForgotPassword />} />{" "}
        <Route path="/create-user" element={<CreateUser />} />{" "}
-       <Route
+       
+       {/* We are currently rendering AvailabilityResults directly in TempleScheduler, so I don't think we need this route: */}
+       {/* <Route
          path="/availability"
          element={
            <AvailabilityResults
@@ -36,7 +38,7 @@ function App() {
              data={{ slots: [] }}
            />
          }
-       />
+       /> */}
      </Routes>
    </Router>
  );
