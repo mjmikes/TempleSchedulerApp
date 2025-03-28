@@ -40,14 +40,24 @@ export const LoginForm: React.FC = () => {
           aria-label="Password"
         />
       </div>
-      <button type="submit" className="btn btn-secondary mb-5">
+      <button type="submit" className="btn btn-secondary">
         Login
       </button>
-      <button type="button" className="btn btn-outline-secondary mb-2" onClick={() => navigate("/forgot-password")}>
-        Forgot Password?
+      <br />
+      <button
+        type="button"
+        className="btn btn-outline-secondary"
+        onClick={() => navigate("/forgot-password")}
+      >
+        Forgot Password
       </button>
-      <button type="button" className="btn btn-outline-secondary mb-2" onClick={() => navigate("/create-user")}>
-        New User?
+      <br />
+      <button
+        type="button"
+        className="btn btn-outline-secondary"
+        onClick={() => navigate("/create-user")}
+      >
+        Create Account
       </button>
     </form>
   );

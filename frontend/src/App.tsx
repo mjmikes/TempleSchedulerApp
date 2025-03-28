@@ -6,28 +6,26 @@ import AppointmentCancellation from "./components/AppointmentCancellation";
 import AppointmentConfirmation from "./components/AppointmentConfirmation";
 import TempleScheduler from "./components/TempleScheduler";
 import LoginPage from "./components/LoginPage";
-import AvailabilityResults from "./components/AvailabilityResults";
+// import AvailabilityResults from "./components/AvailabilityResults";
 import ForgotPassword from "./components/ForgotPassword"; // Import ForgotPassword component
 import CreateUser from "./components/CreateUser"; // Import CreateUser component
 
 function App() {
-  
- return (
-   <Router>
-     <MobileNavigation />
-     <Routes>
-       <Route path="/" element={<MyAppointments />} />
-       <Route path="/appointments" element={<MyAppointments />} />
-       <Route path="/add" element={<TempleScheduler />} />
-       <Route path="/login" element={<LoginPage />} />
-       <Route path="/cancel" element={<AppointmentCancellation />} />
-       <Route path="/confirm" element={<AppointmentConfirmation />} />
-       <Route path="/schedule" element={<TempleScheduler />} />
-       <Route path="/forgot-password" element={<ForgotPassword />} />{" "}
-       <Route path="/create-user" element={<CreateUser />} />{" "}
-       
-       {/* We are currently rendering AvailabilityResults directly in TempleScheduler, so I don't think we need this route: */}
-       {/* <Route
+  return (
+    <Router>
+      <MobileNavigation />
+      <Routes>
+        <Route path="/" element={<MyAppointments />} />
+        <Route path="/appointments" element={<MyAppointments />} />
+        <Route path="/add" element={<TempleScheduler />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/cancel" element={<AppointmentCancellation />} />
+        <Route path="/confirm" element={<AppointmentConfirmation />} />
+        <Route path="/schedule" element={<TempleScheduler />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />{" "}
+        <Route path="/create-user" element={<CreateUser />} />{" "}
+        {/* We are currently rendering AvailabilityResults directly in TempleScheduler, so I don't think we need this route: */}
+        {/* <Route
          path="/availability"
          element={
            <AvailabilityResults
@@ -39,9 +37,9 @@ function App() {
            />
          }
        /> */}
-     </Routes>
-   </Router>
- );
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

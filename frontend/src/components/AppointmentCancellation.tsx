@@ -3,7 +3,6 @@ import React from "react";
 import { NavigationButton } from "./NavigationButton";
 import { CancelAppointmentContent } from "./CancelAppointmentContent";
 
-
 const AppointmentCancellation: React.FC = () => {
   return (
     <>
@@ -13,11 +12,6 @@ const AppointmentCancellation: React.FC = () => {
       />
 
       <div className="relative w-full min-h-screen bg-white font-['Inter']">
-        <NavigationButton
-          variant="menu"
-          className="absolute left-[11px] top-[67px]"
-        />
-
         <CancelAppointmentContent
           templeImage="https://cdn.builder.io/api/v1/image/assets/TEMP/5e3a8b1c6d511599a5abd5cbed0722f7dd5dc2ed"
           templeName="Orem Temple"

@@ -1,3 +1,44 @@
+import React from "react";
+import "./AvailabilityResults.css";
+import { useNavigate } from "react-router-dom";
+
+interface AvailabilityResultsProps {
+  availability: { slots: any[] } | null;
+}
+
+const AvailabilityResults: React.FC<AvailabilityResultsProps> = ({
+  availability,
+}) => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = (slot: any) => {
+    // Navigate to the confirmation page and pass the selected slot data
+    navigate("/confirm", { state: { slot } });
+  };
+
+  if (!availability || !availability.slots.length) {
+    return <p>No available sessions found.</p>;
+  }
+
+  return (
+    <div>
+      <h3 style={{ textAlign: "center" }}>Available Sessions:</h3>
+      <div className="button-container">
+        {availability.slots.map((slot, index) => (
+          <div key={index}>
+            <button className="button" onClick={() => handleButtonClick(slot)}>
+              <strong>{slot.temple}</strong> <br /> <i>{slot.ordinance}</i>{" "}
+              <br /> {slot.date} at {slot.time}
+            </button>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default AvailabilityResults;
+
 // import React from "react";
 
 // type AvailabilityResultsProps = {
@@ -60,7 +101,6 @@
 
 // export default AvailabilityResults;
 
-
 // import React from "react";
 // import { useNavigate } from "react-router-dom";
 
@@ -79,7 +119,6 @@
 //   temple: string;
 //   ordinances: OrdinanceData[];
 // };
-
 
 // type AvailabilityResultsProps = {
 //   selectedDate: Date | null; // Assuming it's a string; adjust if it's a Date object
@@ -152,11 +191,6 @@
 
 // export default AvailabilityResults;
 
-
-import React from "react";
-import "./AvailabilityResults.css";
-import { useNavigate } from "react-router-dom";
-
 // Define types for data structure
 // type AvailabilityResultsProps = {
 //   selectedDate: Date | null;
@@ -168,33 +202,6 @@ import { useNavigate } from "react-router-dom";
 //     }[];
 //   }[];
 // };
-
-interface AvailabilityResultsProps {
-  availability: { slots: any[] } | null;
-}
-
-const AvailabilityResults: React.FC<AvailabilityResultsProps> = ({ availability }) => {
-  if (!availability || !availability.slots.length) {
-    return <p>No available sessions found.</p>;
-  }
-
-  return (
-    <div>
-      <h3 text-align="center">Available Sessions:</h3>
-      <div className="button-container">
-        {availability.slots.map((slot, index) => (
-          <div key={index}>
-            <button className="button">
-              <strong>{slot.temple}</strong> <br/> <i>{slot.ordinance}</i> <br/> {slot.date} at {slot.time} 
-            </button>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default AvailabilityResults;
 
 // const AvailabilityResults: React.FC<AvailabilityResultsProps> = ({ selectedDate, data }) => {
 //   const navigate = useNavigate();

@@ -1,10 +1,11 @@
 "use client";
 import React from "react";
-import { NavigationButton } from "./NavigationButton";
 import { ConfirmationContent } from "./ConfirmationContent";
 import { ReminderButton } from "./ReminderButton";
+import { useNavigate } from "react-router-dom";
 
 const AppointmentConfirmation: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <>
       <link
@@ -13,20 +14,19 @@ const AppointmentConfirmation: React.FC = () => {
       />
 
       <div className="relative w-full min-h-screen bg-white font-['Inter']">
-        <NavigationButton
-          variant="menu"
-          className="absolute left-[11px] top-[67px]"
-        />
+        <br />
+        <br />
 
-        <ConfirmationContent
-          templeImage="https://cdn.builder.io/api/v1/image/assets/TEMP/5e3a8b1c6d511599a5abd5cbed0722f7dd5dc2ed"
-          templeName="Orem Temple"
-          date="Friday April 17, 2025"
-          time="10am"
-          type="Endowment"
-        />
+        {/* Generic Confirmation Content */}
+        <ConfirmationContent />
 
         <ReminderButton />
+        <button
+          onClick={() => navigate("/appointments")}
+          className="p-3 mx-auto my-8 text-base text-center rounded border border-solid bg-neutral-100 border-[#ccc] text-stone-900 w-[109px] hover:bg-neutral-200 transition-colors"
+        >
+          Back to Appointments
+        </button>
       </div>
     </>
   );

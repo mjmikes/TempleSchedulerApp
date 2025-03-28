@@ -1,20 +1,20 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import '../styles/CreateUser.css';
+import "../styles/CreateUser.css";
 
 //Define CreateUser Component
 const CreateUser = () => {
   const [username, setUsername] = useState(""); // initialize Username
   const [password, setPassword] = useState(""); // initialize Password
   const [errors, setErrors] = useState<{
-    username?: String;
+    username?: string;
     password?: string;
   }>({});
   const navigate = useNavigate();
 
   // Validate Inputs
   const validateForm = () => {
-    let newErrors: { username?: string; password?: string } = {};
+    const newErrors: { username?: string; password?: string } = {};
 
     if (!username.trim()) newErrors.username = "Username is required";
     if (!password) {
@@ -32,12 +32,12 @@ const CreateUser = () => {
     e.preventDefault();
     if (validateForm()) {
       console.log("Creating user:", { username, password });
-      navigate("/LoginPage");
+      navigate("/login");
     }
   };
 
   const handleCancel = () => {
-    navigate("/LoginPage");
+    navigate("/login");
   };
 
   // Returning the Form
@@ -62,7 +62,9 @@ const CreateUser = () => {
         {errors.password && <p style={{ color: "red" }}>{errors.password}</p>}
       </div>
 
-      <button className="forButton" type="submit">Create Account</button>
+      <button className="forButton" type="submit">
+        Create Account
+      </button>
       <button className="forButton" type="button" onClick={handleCancel}>
         Cancel
       </button>

@@ -83,8 +83,8 @@ const MyAppointments: React.FC = () => {
     <main className="flex flex-col mx-auto w-full bg-white w-100 mt-4">
       <div className="fixed top-0 left-0 right-0 z-20 bg-white">
         <div className="flex justify-between items-center p-6 w-full">
-          <h1 className="text-2xl fw-bold tracking-tight leading-tight text-stone-900 flex-grow text-center">
-            My Temple Appointments
+          <h1 className="p-20 fw-bold tracking-tight leading-tight text-stone-900 text-right ">
+            My Appointments
           </h1>
           <div style={{ width: "48px" }}></div> {/* Spacer for symmetry */}
         </div>

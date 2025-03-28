@@ -12,10 +12,14 @@ export default function LoginPage() {
       {/* <StatusBar /> */}
       <section className="flex flex-col items-center p-5">
         <h1 className="mt-12 text-4xl font-semibold text-center text-black max-sm:text-3xl">
-          Login Page
+          Login
         </h1>
         <div className="">
-          <img src="/white_church_logo.jpeg" alt="Chruch Logo" style={{height:"300px"}}/>
+          <img
+            src="/white_church_logo.jpeg"
+            alt="Chruch Logo"
+            style={{ height: "300px" }}
+          />
         </div>
         <LoginForm />
       </section>
