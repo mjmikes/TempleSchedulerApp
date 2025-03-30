@@ -46,14 +46,14 @@ export const CancelAppointmentContent: React.FC<ConfirmationContentProps> = ({
       </section>
 
       <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
-        <button className="bg-red-500 text-white py-2 px-6 rounded-lg hover:bg-red-600 transition-colors">
+        <button className="btn btn-danger mb-2">
           Confirm Cancellation
         </button>
         </div>
 
         <button
           onClick={handleBack}
-          className="bg-gray-500 text-white py-2 px-6 rounded-lg hover:bg-gray-600 transition-colors"
+          className="btn btn-outline-secondary"
         >
           Go Back
         </button>

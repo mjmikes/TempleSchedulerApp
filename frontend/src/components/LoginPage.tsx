@@ -14,9 +14,9 @@ export default function LoginPage() {
         <h1 className="mt-12 text-4xl font-semibold text-center text-black max-sm:text-3xl">
           Login
         </h1>
-        <div className="">
+        <div className="pb-4">
           <img
-            src="/white_church_logo.jpeg"
+            src="/church_logo.webp"
             alt="Chruch Logo"
             style={{ height: "300px" }}
           />

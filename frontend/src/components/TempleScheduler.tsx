@@ -788,12 +788,12 @@ const TempleScheduler = () => {
   ];
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <div className="max-w-md mx-auto p-6 bg-white rounded-lg pt-4">
       <h2 className="text-xl font-semibold mb-4 text-center">
         Temple Scheduling
       </h2>
 
-      <div className="space-y-4">
+      <div className="m-4">
         {/* Temple Dropdown */}
         <TempleSelect
           temples={temples}
@@ -810,7 +810,7 @@ const TempleScheduler = () => {
           <select
             value={participants}
             onChange={(e) => setParticipants(Number(e.target.value))}
-            className="w-full border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500"
+            className="my-2 form-select w-full border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500"
           >
             {[1, 2, 3, 4].map((num) => (
               <option key={num} value={num}>
@@ -884,7 +884,7 @@ const TempleScheduler = () => {
           <label className="block text-gray-700 font-medium mb-1">Time: </label>
           <button
             onClick={toggleTimePicker}
-            className="w-full text-left border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500 bg-white shadow"
+            className="btn btn-outline-secondary"
           >
             {selectedTimes.length > 1
               ? selectedTimes.join(", ")
@@ -921,7 +921,7 @@ const TempleScheduler = () => {
       {/* Submit Button */}
       <button
         onClick={handleSubmit}
-        className="w-full mt-6 bg-blue-600 text-black py-2 rounded-lg hover:bg-blue-700 transition"
+        className="btn btn-outline-success mb-3"
       >
         View Availability
       </button>
