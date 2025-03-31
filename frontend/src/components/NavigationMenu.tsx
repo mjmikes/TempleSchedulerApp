@@ -24,16 +24,25 @@ export const NavigationMenu: React.FC<NavigationMenuProps> = ({
       {/* Navigation Links */}
       <nav className="d-flex flex-column p-4 gap-3">
         <br />
-        <Link to="/appointments" className="text-white h5 text-decoration-none">
+        <Link
+          to="/appointments"
+          className="text-white h5 text-decoration-none"
+          onClick={onClose}
+        >
           My Appointments
         </Link>
         <Link
-          to="/add-appointment"
+          to="/add"
           className="text-white h5 text-decoration-none"
+          onClick={onClose}
         >
           Add Appointment
         </Link>
-        <Link to="/login" className="text-white h5 text-decoration-none">
+        <Link
+          to="/login"
+          className="text-white h5 text-decoration-none"
+          onClick={onClose}
+        >
           Sign Out
         </Link>
       </nav>
