@@ -12,7 +12,7 @@ export default function LoginPage() {
       {/* <StatusBar /> */}
       <section className="flex flex-col items-center p-5">
         <h1 className="mt-12 text-4xl font-semibold text-center text-black max-sm:text-3xl">
-          Login
+          Temple Track
         </h1>
         <div className="pb-4">
           <img
